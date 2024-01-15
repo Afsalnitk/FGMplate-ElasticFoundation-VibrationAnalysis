@@ -40,9 +40,3 @@ normalized_Y=MyNetworkFunction(normalized_XX');
 % Compute exponential of each element
 Y = cellfun(@exp, normalized_Y)
 toc
-
-Lb=1; ROWm0=8166;  PRm0=0.3180; Em0=2.0779e+11; h=Lb/ThickRatio;
-Nat_freq=Y/[Lb*Lb*sqrt(h*ROWm0*12*(1-PRm0^2)/(Em0*h^3))/(pi^2)]
-
-Lb=1000; ROWm0=8166*10^-9;  PRm0=0.3180; Em0=2.0779e+5; h=Lb/ThickRatio;
-Nat_freq=Y/[Lb*Lb*sqrt(h*ROWm0*12*(1-PRm0^2)/(Em0*h^3))/(pi^2)]
